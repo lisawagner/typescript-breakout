@@ -37,7 +37,7 @@ export class CanvasView {
   // drawObject(brick: Brick | Paddle | Ball): void {
   //   if (!brick) return;
 
-  drawObject(brick: Brick): void {
+  drawObject(brick: Brick | Paddle): void {
     if (!brick) return;
 
     this.context?.drawImage(

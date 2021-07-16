@@ -6,8 +6,8 @@
   </head>
   <body>
     <div id="main" class="main">
-      <canvas id="playField" width="1000" height="600"></canvas>
-      <img id="background" src="./images/background.png"></img>
+      <canvas id="playField" width="1000" height="550"></canvas>
+      <!-- <img id="background" src="./images/background.png"></img> -->
       <div id="display">
         <div id="score"></div>
         <button id="start">Start</button>
@@ -19,7 +19,10 @@
   <style>
     :root {
       --width: 1000px;
-      --height: 650px;
+      --height: 550px;
+    }
+    body {
+      background: grey;
     }
 
     #main {
@@ -30,6 +33,8 @@
       height: var(--height);
       font-size: 32px;
       font-family: Arial, Helvetica, sans-serif;
+      background-color: #000000;
+      background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
     }
 
     canvas {
@@ -45,7 +50,7 @@
 
     #display {
       position: absolute;
-      bottom: 0;
+      bottom: -40px;
       display: flex;
       justify-content: space-between;
       width: var(--width);
