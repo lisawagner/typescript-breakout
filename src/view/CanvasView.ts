@@ -34,7 +34,10 @@ export class CanvasView {
     if (this.info) this.info.innerHTML = text;
   }
   //   draw objects
-  drawObject(brick: Brick | Paddle | Ball): void {
+  // drawObject(brick: Brick | Paddle | Ball): void {
+  //   if (!brick) return;
+
+  drawObject(brick: Brick): void {
     if (!brick) return;
 
     this.context?.drawImage(
