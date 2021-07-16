@@ -3,8 +3,19 @@
 
 # production
 /build
+/dist
+
+# Typescript v1 declaration files
+typings/
+
+# Optional npm cache directory
+.npm
+
+# dotenv environment variable files
+.env*
 
 # misc
 .DS_Store
+.cache
 
 npm-debug.log*
