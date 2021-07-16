@@ -58,6 +58,12 @@ function gameLoop(
 
   //   Ball Collisions
   collision.checkBallCollision(ball, paddle, view);
+  const collidingBrick = collision.isCollidingBricks(ball, bricks);
+
+  if (collidingBrick) {
+    score += 1;
+    view.drawScore(score);
+  }
 
   requestAnimationFrame(() => gameLoop(view, bricks, paddle, ball, collision));
 }

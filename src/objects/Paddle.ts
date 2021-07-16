@@ -52,16 +52,16 @@ export class Paddle {
 
   handleKeyUp = (e: KeyboardEvent): void => {
     if (e.code === "ArrowLeft" || e.key === "ArrowLeft") this.moveLeft = false;
-    if (e.code === "A" || e.key === "A") this.moveLeft = false;
+    if (e.code === "65" || e.key === "65") this.moveLeft = false;
     if (e.code === "ArrowRight" || e.key === "ArrowRight")
       this.moveRight = false;
-    if (e.code === "D" || e.key === "D") this.moveRight = false;
+    if (e.code === "68" || e.key === "68") this.moveRight = false;
   };
   handleKeyDown = (e: KeyboardEvent): void => {
     if (e.code === "ArrowLeft" || e.key === "ArrowLeft") this.moveLeft = true;
-    if (e.code === "A" || e.key === "A") this.moveLeft = true;
+    if (e.code === "65" || e.key === "65") this.moveLeft = true;
     if (e.code === "ArrowRight" || e.key === "ArrowRight")
       this.moveRight = true;
-    if (e.code === "D" || e.key === "D") this.moveRight = true;
+    if (e.code === "68" || e.key === "68") this.moveRight = true;
   };
 }
