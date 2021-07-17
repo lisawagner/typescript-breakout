@@ -17,23 +17,23 @@ export class CanvasView {
     this.start = document.querySelector("#start");
     this.info = document.querySelector("#info");
   }
-  // clear canvas method
+  // Clear canvas method
   clear(): void {
     this.context?.clearRect(0, 0, this.canvas.width, this.canvas.height);
   }
-  // init function
+  // Init function
   initStartButton(startFunction: (view: CanvasView) => void): void {
     this.start?.addEventListener("click", () => startFunction(this));
   }
-  //   draw score
+  // Draw score
   drawScore(score: number): void {
     if (this.scoreDisplay) this.scoreDisplay.innerHTML = score.toString();
   }
-  // draw info
+  // Draw info
   drawInfo(text: string): void {
     if (this.info) this.info.innerHTML = text;
   }
-  //   draw objects
+  // Draw objects
   drawObject(brick: Brick | Paddle | Ball): void {
     if (!brick) return;
 
@@ -45,7 +45,7 @@ export class CanvasView {
       brick.height
     );
   }
-  //   draw bricks
+  // Draw bricks
   drawBricks(bricks: Brick[]): void {
     bricks.forEach((brick) => this.drawObject(brick));
   }

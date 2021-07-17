@@ -3,10 +3,10 @@ import { Ball } from "./objects/Ball";
 import { Brick } from "./objects/Brick";
 import { Paddle } from "./objects/Paddle";
 import { Collisions } from "./Collisions";
-// images
+// Images
 import PADDLE_IMAGE from "./images/paddle.png";
 import BALL_IMAGE from "./images/ball.png";
-// level and colors
+// Level and colors
 import {
   PADDLE_SPEED,
   PADDLE_HEIGHT,

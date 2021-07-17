@@ -20,7 +20,7 @@ export class Paddle {
     this.moveRight = false;
     this.paddleImage.src = image;
 
-    // add event listeners
+    // Add event listeners
     document.addEventListener("keydown", this.handleKeyDown);
     document.addEventListener("keyup", this.handleKeyUp);
   }
